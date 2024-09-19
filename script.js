@@ -3,6 +3,7 @@ const emailInput = form.querySelector("#email");
 const errorMessage = form.querySelector(".error-message");
 const successComponent = document.querySelector(".success-component");
 const successMessageBtn = document.querySelector(".dismiss");
+const strong = document.querySelector("strong");
 
 function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -35,6 +36,7 @@ form.addEventListener("submit", function (event) {
     emailInput.style.cssText = "";
     toggleId(form, "hide");
     toggleId(successComponent, "hide");
+    strong.textContent = emailInput.value;
   }
 });
 
