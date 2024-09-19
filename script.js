@@ -5,6 +5,7 @@ const successComponent = document.querySelector(".success-component");
 const successMessageBtn = document.querySelector(".dismiss");
 const strong = document.querySelector("strong");
 
+
 function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
